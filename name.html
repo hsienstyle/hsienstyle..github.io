@@ -2,10 +2,9 @@
 <html>
 <body>
 
-<h2>陽光雙帥</h2>
-
-<button onclick="myFunction()">Try it</button>
-<p id="demo2" style="font-size:60px"></p>
+<h3>陽光雙帥美名產生器</h3>
+<button onclick="myFunction()" style="width:200px;height:80px;font-size:40px;">Try it</button>
+<p id="demo2" style="font-size:100px" onclick="myFunction()"></p>
 
 <script>
 var names = ["吳", "思", "賢"];
@@ -13,10 +12,10 @@ var names2 = ['昌', '忱', '承', '忡', '初', '垂', '兒', '庚', '金', '�
 
 var names3 = ['倉', '宸', '乘', '純', '琺', '剛', '倪', '閃', '剡', '扇', '珅', '神', '師', '時', '書', '索', '席', '修', '宰', '釗', '座', '桉', '柏', '柏', '芳', '芬', '芙', '高', '格', '恭', '拱', '桓', '恢', '記', '珈', '兼', '衿', '徑', '俱', '倨', '雋', '珂', '庫', '豈', '起', '栩', '椏', '原', '紜', '班', '畢', '紡', '舫', '紛', '俯', '航', '恆', '候', '洹', '洄', '務', '效', '訓', '衍', '洋', '晉', '朗', '烙', '料', '烈', '旅', '倫', '能', '朔', '特', '庭', '夏', '訊', '迅', '秧', '展', '珍', '朕', '案', '城', '恩', '容', '軒', '宴', '晏', '益', '祐', '育', '員'];
 
-document.getElementById("demo").innerHTML = names2.length;
+
 var pos2 = Math.floor((Math.random() * names2.length));
 var pos3 = Math.floor((Math.random() * names3.length));
-document.getElementById("demo1").innerHTML = pos2 + "_" + pos3;
+
 document.getElementById("demo2").innerHTML = names[0] + names2[pos2] + names3[pos3];
 
 function myFunction() {
